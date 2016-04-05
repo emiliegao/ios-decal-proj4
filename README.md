@@ -25,7 +25,7 @@
 ### Model
 * Player
 * Enemy
-* ???
+* Pet
 
 ### View
 * TutorialView
