@@ -23,9 +23,9 @@
 ## Implementation
 
 ### Model
+* Player
+* Enemy
 * ???
-* ???
-* ??
 
 ### View
 * TutorialView
