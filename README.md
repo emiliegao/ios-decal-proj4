@@ -14,8 +14,8 @@
 
 ## Control Flow
 * Players are initially presented with a splash screen, which leads them to a click-through instruction view on first start up.
-* Upon finishing the tutorial, players will be presented the Battle View where they will fight an endless stream of monsters that get stronger and stronger.
-* Players will keep on defeating enemies.
+* Upon finishing the tutorial, players will be presented the Battlegrounds View where they will fight an endless stream of monsters that get stronger and stronger.
+* Players will keep on defeating enemies and accumulating points.
 * Players can tap the shop button to go to the Shop to buy upgrades.
 * Players can also tap the pets button to go to the Pet Shop to buy pets.
 * After shopping, players can return to the Battle View where they will continue to fight enemies.
@@ -29,14 +29,14 @@
 
 ### View
 * TutorialView
-* BattleView
+* BattlegroundsView
 * WeaponshopView
 * PetshopView
 * StatsView
 
 ### Controller
 * TutorialViewController
-* BattleViewController
+* BattlegroundsViewController
 * WeaponshopViewController
 * PetshopViewController
 * StatsViewController
