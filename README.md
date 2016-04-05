@@ -23,13 +23,20 @@
 ## Implementation
 
 ### Model
+* ???
+* ???
+* ??
 
 ### View
-*TutorialView
-*BattleView
-*WeaponshopView
-*PetshopView
-*StatsView
+* TutorialView
+* BattleView
+* WeaponshopView
+* PetshopView
+* StatsView
 
 ### Controller
-
+* TutorialViewController
+* BattleViewController
+* WeaponshopViewController
+* PetshopViewController
+* StatsViewController
