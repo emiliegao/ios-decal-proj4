@@ -14,7 +14,19 @@
 		A8F9BB621CCED0E200210ADC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8F9BB601CCED0E200210ADC /* LaunchScreen.storyboard */; };
 		A8F9BB6D1CCED0E300210ADC /* clickWarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F9BB6C1CCED0E300210ADC /* clickWarTests.swift */; };
 		A8F9BB781CCED0E300210ADC /* clickWarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F9BB771CCED0E300210ADC /* clickWarUITests.swift */; };
-		A8F9BB861CCEEA2900210ADC /* Images in Resources */ = {isa = PBXBuildFile; fileRef = A8F9BB851CCEEA2900210ADC /* Images */; };
+		A8F9BB941CCF172100210ADC /* Monster1_1.png in Resources */ = {isa = PBXBuildFile; fileRef = A8F9BB871CCF172100210ADC /* Monster1_1.png */; };
+		A8F9BB951CCF172100210ADC /* Monster1_2.png in Resources */ = {isa = PBXBuildFile; fileRef = A8F9BB881CCF172100210ADC /* Monster1_2.png */; };
+		A8F9BB961CCF172100210ADC /* Monster1_3.png in Resources */ = {isa = PBXBuildFile; fileRef = A8F9BB891CCF172100210ADC /* Monster1_3.png */; };
+		A8F9BB971CCF172100210ADC /* Monster2_1.png in Resources */ = {isa = PBXBuildFile; fileRef = A8F9BB8A1CCF172100210ADC /* Monster2_1.png */; };
+		A8F9BB981CCF172100210ADC /* Monster2_2.png in Resources */ = {isa = PBXBuildFile; fileRef = A8F9BB8B1CCF172100210ADC /* Monster2_2.png */; };
+		A8F9BB991CCF172100210ADC /* Monster2_3.png in Resources */ = {isa = PBXBuildFile; fileRef = A8F9BB8C1CCF172100210ADC /* Monster2_3.png */; };
+		A8F9BB9A1CCF172100210ADC /* pet_bird.png in Resources */ = {isa = PBXBuildFile; fileRef = A8F9BB8D1CCF172100210ADC /* pet_bird.png */; };
+		A8F9BB9B1CCF172100210ADC /* pet_cat.png in Resources */ = {isa = PBXBuildFile; fileRef = A8F9BB8E1CCF172100210ADC /* pet_cat.png */; };
+		A8F9BB9C1CCF172100210ADC /* pet_dog.png in Resources */ = {isa = PBXBuildFile; fileRef = A8F9BB8F1CCF172100210ADC /* pet_dog.png */; };
+		A8F9BB9D1CCF172100210ADC /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = A8F9BB901CCF172100210ADC /* user.png */; };
+		A8F9BB9F1CCF172100210ADC /* weapon_stick.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A8F9BB921CCF172100210ADC /* weapon_stick.jpg */; };
+		A8F9BBA21CCF181800210ADC /* weapon_hand.png in Resources */ = {isa = PBXBuildFile; fileRef = A8F9BBA11CCF181800210ADC /* weapon_hand.png */; };
+		A8F9BBA41CCF181F00210ADC /* weapon_sword.png in Resources */ = {isa = PBXBuildFile; fileRef = A8F9BBA31CCF181F00210ADC /* weapon_sword.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +60,19 @@
 		A8F9BB731CCED0E300210ADC /* clickWarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = clickWarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8F9BB771CCED0E300210ADC /* clickWarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clickWarUITests.swift; sourceTree = "<group>"; };
 		A8F9BB791CCED0E300210ADC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A8F9BB851CCEEA2900210ADC /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = "<group>"; };
+		A8F9BB871CCF172100210ADC /* Monster1_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Monster1_1.png; path = Images/Monster1_1.png; sourceTree = "<group>"; };
+		A8F9BB881CCF172100210ADC /* Monster1_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Monster1_2.png; path = Images/Monster1_2.png; sourceTree = "<group>"; };
+		A8F9BB891CCF172100210ADC /* Monster1_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Monster1_3.png; path = Images/Monster1_3.png; sourceTree = "<group>"; };
+		A8F9BB8A1CCF172100210ADC /* Monster2_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Monster2_1.png; path = Images/Monster2_1.png; sourceTree = "<group>"; };
+		A8F9BB8B1CCF172100210ADC /* Monster2_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Monster2_2.png; path = Images/Monster2_2.png; sourceTree = "<group>"; };
+		A8F9BB8C1CCF172100210ADC /* Monster2_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Monster2_3.png; path = Images/Monster2_3.png; sourceTree = "<group>"; };
+		A8F9BB8D1CCF172100210ADC /* pet_bird.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pet_bird.png; path = Images/pet_bird.png; sourceTree = "<group>"; };
+		A8F9BB8E1CCF172100210ADC /* pet_cat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pet_cat.png; path = Images/pet_cat.png; sourceTree = "<group>"; };
+		A8F9BB8F1CCF172100210ADC /* pet_dog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pet_dog.png; path = Images/pet_dog.png; sourceTree = "<group>"; };
+		A8F9BB901CCF172100210ADC /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = user.png; path = Images/user.png; sourceTree = "<group>"; };
+		A8F9BB921CCF172100210ADC /* weapon_stick.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = weapon_stick.jpg; path = Images/weapon_stick.jpg; sourceTree = "<group>"; };
+		A8F9BBA11CCF181800210ADC /* weapon_hand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = weapon_hand.png; path = ../../../Downloads/weapon_hand.png; sourceTree = "<group>"; };
+		A8F9BBA31CCF181F00210ADC /* weapon_sword.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = weapon_sword.png; path = ../../../Downloads/weapon_sword.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,11 +103,23 @@
 		A8F9BB4B1CCED0E200210ADC = {
 			isa = PBXGroup;
 			children = (
-				A8F9BB851CCEEA2900210ADC /* Images */,
 				A8F9BB561CCED0E200210ADC /* clickWar */,
 				A8F9BB6B1CCED0E300210ADC /* clickWarTests */,
 				A8F9BB761CCED0E300210ADC /* clickWarUITests */,
 				A8F9BB551CCED0E200210ADC /* Products */,
+				A8F9BB871CCF172100210ADC /* Monster1_1.png */,
+				A8F9BB881CCF172100210ADC /* Monster1_2.png */,
+				A8F9BB891CCF172100210ADC /* Monster1_3.png */,
+				A8F9BB8A1CCF172100210ADC /* Monster2_1.png */,
+				A8F9BB8B1CCF172100210ADC /* Monster2_2.png */,
+				A8F9BB8C1CCF172100210ADC /* Monster2_3.png */,
+				A8F9BB8D1CCF172100210ADC /* pet_bird.png */,
+				A8F9BB8E1CCF172100210ADC /* pet_cat.png */,
+				A8F9BB8F1CCF172100210ADC /* pet_dog.png */,
+				A8F9BB901CCF172100210ADC /* user.png */,
+				A8F9BB921CCF172100210ADC /* weapon_stick.jpg */,
+				A8F9BBA11CCF181800210ADC /* weapon_hand.png */,
+				A8F9BBA31CCF181F00210ADC /* weapon_sword.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -235,10 +271,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8F9BB861CCEEA2900210ADC /* Images in Resources */,
 				A8F9BB621CCED0E200210ADC /* LaunchScreen.storyboard in Resources */,
+				A8F9BB961CCF172100210ADC /* Monster1_3.png in Resources */,
+				A8F9BB981CCF172100210ADC /* Monster2_2.png in Resources */,
+				A8F9BB9D1CCF172100210ADC /* user.png in Resources */,
+				A8F9BB971CCF172100210ADC /* Monster2_1.png in Resources */,
+				A8F9BB9F1CCF172100210ADC /* weapon_stick.jpg in Resources */,
 				A8F9BB5F1CCED0E200210ADC /* Assets.xcassets in Resources */,
+				A8F9BB9B1CCF172100210ADC /* pet_cat.png in Resources */,
+				A8F9BB9C1CCF172100210ADC /* pet_dog.png in Resources */,
+				A8F9BB9A1CCF172100210ADC /* pet_bird.png in Resources */,
+				A8F9BB951CCF172100210ADC /* Monster1_2.png in Resources */,
 				A8F9BB5D1CCED0E200210ADC /* Main.storyboard in Resources */,
+				A8F9BB941CCF172100210ADC /* Monster1_1.png in Resources */,
+				A8F9BBA21CCF181800210ADC /* weapon_hand.png in Resources */,
+				A8F9BBA41CCF181F00210ADC /* weapon_sword.png in Resources */,
+				A8F9BB991CCF172100210ADC /* Monster2_3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,6 +539,7 @@
 				A8F9BB7E1CCED0E300210ADC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A8F9BB7F1CCED0E300210ADC /* Build configuration list for PBXNativeTarget "clickWarTests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +548,7 @@
 				A8F9BB811CCED0E300210ADC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A8F9BB821CCED0E300210ADC /* Build configuration list for PBXNativeTarget "clickWarUITests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +557,7 @@
 				A8F9BB841CCED0E300210ADC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

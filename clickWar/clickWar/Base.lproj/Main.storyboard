@@ -17,16 +17,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="C L I C K W A R" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LiL-nN-dfV">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="C L I C K W A R" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LiL-nN-dfV">
                                 <rect key="frame" x="240" y="184" width="120" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5q5-wN-Wcn">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5q5-wN-Wcn">
                                 <rect key="frame" x="264" y="367" width="72" height="30"/>
                                 <state key="normal" title="TUTORIAL"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EiT-jO-8oa">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EiT-jO-8oa">
                                 <rect key="frame" x="282" y="329" width="36" height="30"/>
                                 <state key="normal" title="PLAY"/>
                                 <connections>
@@ -35,11 +35,16 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LiL-nN-dfV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="66H-rU-evn"/>
+                            <constraint firstItem="5q5-wN-Wcn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="me7-Vt-df7"/>
+                            <constraint firstItem="EiT-jO-8oa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ogB-LS-fDh"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="123" y="375"/>
+            <point key="canvasLocation" x="129" y="357"/>
         </scene>
         <!--Page View Controller-->
         <scene sceneID="N9o-Aa-WYa">
@@ -47,7 +52,7 @@
                 <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="57e-k0-ptl" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T70-NB-nGl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137" y="1050"/>
+            <point key="canvasLocation" x="123" y="1050"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Xyz-Vs-cBO">
@@ -61,10 +66,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hj9-mg-4Gq">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hj9-mg-4Gq">
                                 <rect key="frame" x="180" y="55" width="240" height="342"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="IvF-5L-fly">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="IvF-5L-fly">
                                 <rect key="frame" x="77" y="440" width="446" height="93"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">This is the battlefield, where you can click on monsters to inflict damage! The damage you will inflict is based on the weapon and pet that you have. You won't start with a pet, but you'll get the basic weapon for free.</string>
@@ -73,6 +78,10 @@
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hj9-mg-4Gq" firstAttribute="centerY" secondItem="4XS-RM-1h1" secondAttribute="centerY" id="gaa-5D-J5E"/>
+                            <constraint firstItem="IvF-5L-fly" firstAttribute="centerX" secondItem="4XS-RM-1h1" secondAttribute="centerX" id="qNy-5D-ZjN"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wYz-ip-PD9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -91,10 +100,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kdu-xd-uKh">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kdu-xd-uKh">
                                 <rect key="frame" x="180" y="63" width="240" height="342"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="yVV-wQ-tFc">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="yVV-wQ-tFc">
                                 <rect key="frame" x="88" y="451" width="446" height="93"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Hi! This is you, and some information about you. In this game, you will be fighting monsters by clicking them. You will have one item and one pet, which you can upgrade as you defeat more monsters and collect more coins!</string>
@@ -103,6 +112,10 @@
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yVV-wQ-tFc" firstAttribute="centerY" secondItem="MJs-lo-z5e" secondAttribute="centerY" id="219-y9-0SR"/>
+                            <constraint firstItem="kdu-xd-uKh" firstAttribute="centerY" secondItem="MJs-lo-z5e" secondAttribute="centerY" id="aDy-fW-Zb2"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c3i-ZN-E3p" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -139,39 +152,56 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4KG-ET-Mgg">
-                                <rect key="frame" x="250" y="248" width="100" height="100"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="user.png" translatesAutoresizingMaskIntoConstraints="NO" id="DuG-8H-7zv">
+                                <rect key="frame" x="249" y="155" width="100" height="100"/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Pet:" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gD8-l5-Yzk">
-                                <rect key="frame" x="253" y="210" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Weapon:" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zOQ-fI-7Q2">
-                                <rect key="frame" x="253" y="359" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ioG-Q0-lHf">
-                                <rect key="frame" x="250" y="397" width="100" height="100"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="pet_cat.png" translatesAutoresizingMaskIntoConstraints="NO" id="4KG-ET-Mgg">
+                                <rect key="frame" x="248" y="301" width="100" height="100"/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Stats:" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qs3-al-i7z">
-                                <rect key="frame" x="250" y="41" width="97" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Pet:" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gD8-l5-Yzk">
+                                <rect key="frame" x="251" y="263" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4jG-J6-2Ex">
-                                <rect key="frame" x="281" y="521" width="40" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Weapon:" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zOQ-fI-7Q2">
+                                <rect key="frame" x="251" y="412" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="weapon_sword.png" translatesAutoresizingMaskIntoConstraints="NO" id="ioG-Q0-lHf">
+                                <rect key="frame" x="248" y="450" width="100" height="100"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Stats:" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qs3-al-i7z">
+                                <rect key="frame" x="248" y="94" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4jG-J6-2Ex">
+                                <rect key="frame" x="214" y="575" width="40" height="30"/>
                                 <state key="normal" title="Fight!"/>
                                 <connections>
                                     <segue destination="lTN-Gj-CjQ" kind="show" id="cEu-Pl-Wfu"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="user.png" translatesAutoresizingMaskIntoConstraints="NO" id="DuG-8H-7zv">
-                                <rect key="frame" x="251" y="102" width="100" height="100"/>
-                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DxS-pF-fVS">
+                                <rect key="frame" x="345" y="575" width="41" height="30"/>
+                                <state key="normal" title="Home"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="ExM-aM-SDr"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DxS-pF-fVS" firstAttribute="leading" secondItem="ioG-Q0-lHf" secondAttribute="trailing" constant="-3" id="E1W-VK-gu2"/>
+                            <constraint firstItem="zOQ-fI-7Q2" firstAttribute="centerX" secondItem="Bso-kj-P3g" secondAttribute="centerX" id="FU0-61-LX1"/>
+                            <constraint firstItem="4KG-ET-Mgg" firstAttribute="centerX" secondItem="Bso-kj-P3g" secondAttribute="centerX" id="L02-bH-yxw"/>
+                            <constraint firstItem="DuG-8H-7zv" firstAttribute="centerX" secondItem="Bso-kj-P3g" secondAttribute="centerX" id="OeH-cw-1uL"/>
+                            <constraint firstItem="Qs3-al-i7z" firstAttribute="centerX" secondItem="Bso-kj-P3g" secondAttribute="centerX" id="UXJ-5N-AeR"/>
+                            <constraint firstItem="gD8-l5-Yzk" firstAttribute="centerX" secondItem="Bso-kj-P3g" secondAttribute="centerX" id="e3Y-QE-chv"/>
+                            <constraint firstItem="ioG-Q0-lHf" firstAttribute="leading" secondItem="4jG-J6-2Ex" secondAttribute="trailing" constant="-6" id="kUB-cq-uAE"/>
+                            <constraint firstItem="ioG-Q0-lHf" firstAttribute="centerX" secondItem="Bso-kj-P3g" secondAttribute="centerX" id="pGq-Bf-Dcq"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hnW-0v-vaS" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -190,53 +220,64 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="user.png" translatesAutoresizingMaskIntoConstraints="NO" id="Pbg-p6-6Xn">
-                                <rect key="frame" x="192" y="327" width="100" height="100"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="user.png" translatesAutoresizingMaskIntoConstraints="NO" id="Pbg-p6-6Xn">
+                                <rect key="frame" x="191" y="347" width="100" height="100"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rxj-V7-CQP">
-                                <rect key="frame" x="308" y="327" width="100" height="100"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="pet_cat.png" translatesAutoresizingMaskIntoConstraints="NO" id="rxj-V7-CQP">
+                                <rect key="frame" x="307" y="347" width="100" height="100"/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Pet:" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QTO-uN-gKZ">
-                                <rect key="frame" x="192" y="435" width="97" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Pet:" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QTO-uN-gKZ">
+                                <rect key="frame" x="191" y="450" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Health:" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uJP-pT-y1I">
-                                <rect key="frame" x="253" y="203" width="97" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Health:" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uJP-pT-y1I">
+                                <rect key="frame" x="252" y="218" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Coins:" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mmn-7P-4tL">
-                                <rect key="frame" x="311" y="435" width="97" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Coins:" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mmn-7P-4tL">
+                                <rect key="frame" x="310" y="450" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d5H-GX-ABJ">
-                                <rect key="frame" x="250" y="95" width="100" height="100"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Monster1_2.png" translatesAutoresizingMaskIntoConstraints="NO" id="d5H-GX-ABJ">
+                                <rect key="frame" x="249" y="110" width="100" height="100"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="48W-qC-OBq">
-                                <rect key="frame" x="252" y="511" width="96" height="30"/>
-                                <state key="normal" title="Weapon Shop"/>
-                                <connections>
-                                    <segue destination="tfS-9q-UOi" kind="showDetail" id="WOq-nV-0b1"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jaq-7j-Jwm">
-                                <rect key="frame" x="394" y="511" width="42" height="30"/>
-                                <state key="normal" title="Pause"/>
-                                <connections>
-                                    <segue destination="nXl-Xy-N6A" kind="show" id="mpP-mY-gkh"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Vh-1x-4lG">
-                                <rect key="frame" x="130" y="511" width="63" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Vh-1x-4lG">
+                                <rect key="frame" x="129" y="526" width="63" height="30"/>
                                 <state key="normal" title="Pet Shop"/>
                                 <connections>
                                     <segue destination="Dzk-AW-qeu" kind="showDetail" id="xmM-ld-uaF"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="48W-qC-OBq">
+                                <rect key="frame" x="251" y="526" width="96" height="30"/>
+                                <state key="normal" title="Weapon Shop"/>
+                                <connections>
+                                    <segue destination="tfS-9q-UOi" kind="showDetail" id="WOq-nV-0b1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jaq-7j-Jwm">
+                                <rect key="frame" x="393" y="526" width="42" height="30"/>
+                                <state key="normal" title="Pause"/>
+                                <connections>
+                                    <segue destination="nXl-Xy-N6A" kind="show" id="mpP-mY-gkh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="d5H-GX-ABJ" firstAttribute="leading" secondItem="Pbg-p6-6Xn" secondAttribute="trailing" constant="-42" id="0tc-zv-1MD"/>
+                            <constraint firstItem="rxj-V7-CQP" firstAttribute="leading" secondItem="d5H-GX-ABJ" secondAttribute="trailing" constant="-42" id="9AE-f5-BYQ"/>
+                            <constraint firstItem="Mmn-7P-4tL" firstAttribute="leading" secondItem="d5H-GX-ABJ" secondAttribute="trailing" constant="-39" id="K8N-zV-iUw"/>
+                            <constraint firstItem="d5H-GX-ABJ" firstAttribute="centerX" secondItem="vSb-sc-ZmS" secondAttribute="centerX" id="XT3-5t-79w"/>
+                            <constraint firstItem="48W-qC-OBq" firstAttribute="leading" secondItem="0Vh-1x-4lG" secondAttribute="trailing" constant="59" id="eXo-rU-ZUi"/>
+                            <constraint firstItem="48W-qC-OBq" firstAttribute="centerX" secondItem="vSb-sc-ZmS" secondAttribute="centerX" id="gHB-lv-asG"/>
+                            <constraint firstItem="Jaq-7j-Jwm" firstAttribute="leading" secondItem="48W-qC-OBq" secondAttribute="trailing" constant="46" id="j2p-bJ-qCg"/>
+                            <constraint firstItem="d5H-GX-ABJ" firstAttribute="leading" secondItem="QTO-uN-gKZ" secondAttribute="trailing" constant="-39" id="pYn-R2-RSc"/>
+                            <constraint firstItem="uJP-pT-y1I" firstAttribute="centerX" secondItem="vSb-sc-ZmS" secondAttribute="centerX" id="tHx-za-Zhb"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2B5-k5-I7W" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -255,83 +296,103 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Pet Shop" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0IH-Ld-H2W">
-                                <rect key="frame" x="252" y="57" width="97" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Pet Shop" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0IH-Ld-H2W">
+                                <rect key="frame" x="255" y="96" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pet_cat.png" translatesAutoresizingMaskIntoConstraints="NO" id="udE-MT-lL9">
-                                <rect key="frame" x="250" y="157" width="100" height="100"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="pet_cat.png" translatesAutoresizingMaskIntoConstraints="NO" id="udE-MT-lL9">
+                                <rect key="frame" x="254" y="196" width="100" height="100"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PQX-zg-7JX">
-                                <rect key="frame" x="250" y="419" width="100" height="100"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="pet_dog.png" translatesAutoresizingMaskIntoConstraints="NO" id="PQX-zg-7JX">
+                                <rect key="frame" x="253" y="458" width="100" height="100"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pet_dog.png" translatesAutoresizingMaskIntoConstraints="NO" id="3cO-Iz-n8M">
-                                <rect key="frame" x="395" y="157" width="100" height="100"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="pet_dog.png" translatesAutoresizingMaskIntoConstraints="NO" id="3cO-Iz-n8M">
+                                <rect key="frame" x="398" y="196" width="100" height="100"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pet_bird.png" translatesAutoresizingMaskIntoConstraints="NO" id="b30-m3-mpe">
-                                <rect key="frame" x="102" y="157" width="100" height="100"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="pet_bird.png" translatesAutoresizingMaskIntoConstraints="NO" id="b30-m3-mpe">
+                                <rect key="frame" x="105" y="196" width="100" height="100"/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Cat (+3)" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D1q-cL-QeT">
-                                <rect key="frame" x="253" y="265" width="97" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Bird (+1)" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8pP-Bg-rGr">
+                                <rect key="frame" x="108" y="304" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Dog (+5)" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eQc-4k-g4c">
-                                <rect key="frame" x="397" y="265" width="97" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Cat (+3)" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D1q-cL-QeT">
+                                <rect key="frame" x="256" y="304" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="cost: 10 coins" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="p3e-6B-NQe">
-                                <rect key="frame" x="102" y="303" width="105" height="28"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Dog (+5)" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eQc-4k-g4c">
+                                <rect key="frame" x="400" y="304" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="cost: 10 coins" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="p3e-6B-NQe">
+                                <rect key="frame" x="105" y="342" width="105" height="28"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="cost: 20 coins" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vhN-47-WjZ">
-                                <rect key="frame" x="244" y="303" width="105" height="28"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="cost: 20 coins" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vhN-47-WjZ">
+                                <rect key="frame" x="247" y="342" width="105" height="28"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="cost: 30 coins" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="yWs-Qv-wQV">
-                                <rect key="frame" x="397" y="303" width="105" height="34"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="cost: 30 coins" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="yWs-Qv-wQV">
+                                <rect key="frame" x="400" y="342" width="105" height="34"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Selected:" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EmE-GQ-5cL">
-                                <rect key="frame" x="248" y="381" width="97" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Selected:" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EmE-GQ-5cL">
+                                <rect key="frame" x="251" y="420" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EYk-EE-nHC">
-                                <rect key="frame" x="260" y="539" width="73" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EYk-EE-nHC">
+                                <rect key="frame" x="263" y="578" width="73" height="30"/>
                                 <state key="normal" title="Check Out"/>
+                                <connections>
+                                    <segue destination="lTN-Gj-CjQ" kind="showDetail" id="D1u-cX-KLA"/>
+                                </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Coins: $$" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n4i-js-AlD">
-                                <rect key="frame" x="92" y="57" width="97" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Coins: 75" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n4i-js-AlD">
+                                <rect key="frame" x="95" y="96" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Buying a pet increases your damage by a set value each time" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zJ8-1B-ijQ">
-                                <rect key="frame" x="102" y="105" width="400" height="49.5"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="Buying a pet increases your damage by a set value each time" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zJ8-1B-ijQ">
+                                <rect key="frame" x="105" y="134.5" width="400" height="49.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Bird (+1)" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8pP-Bg-rGr">
-                                <rect key="frame" x="105" y="265" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PQX-zg-7JX" firstAttribute="centerX" secondItem="XFq-Zg-g8b" secondAttribute="centerX" id="0K1-tL-cVB"/>
+                            <constraint firstItem="yWs-Qv-wQV" firstAttribute="leading" secondItem="vhN-47-WjZ" secondAttribute="trailing" constant="48" id="0gE-Rj-XgC"/>
+                            <constraint firstItem="eQc-4k-g4c" firstAttribute="leading" secondItem="D1q-cL-QeT" secondAttribute="trailing" constant="47" id="5aI-9T-4VH"/>
+                            <constraint firstItem="EYk-EE-nHC" firstAttribute="centerX" secondItem="XFq-Zg-g8b" secondAttribute="centerX" id="720-sX-Ram"/>
+                            <constraint firstItem="EmE-GQ-5cL" firstAttribute="centerX" secondItem="XFq-Zg-g8b" secondAttribute="centerX" id="9Om-5V-h3F"/>
+                            <constraint firstItem="udE-MT-lL9" firstAttribute="centerX" secondItem="XFq-Zg-g8b" secondAttribute="centerX" id="9sp-TP-uoa"/>
+                            <constraint firstItem="zJ8-1B-ijQ" firstAttribute="centerX" secondItem="XFq-Zg-g8b" secondAttribute="centerX" id="Egg-98-Ata"/>
+                            <constraint firstItem="vhN-47-WjZ" firstAttribute="centerX" secondItem="XFq-Zg-g8b" secondAttribute="centerX" id="Fek-fh-mOA"/>
+                            <constraint firstItem="udE-MT-lL9" firstAttribute="leading" secondItem="b30-m3-mpe" secondAttribute="trailing" constant="48" id="P6R-el-1R5"/>
+                            <constraint firstItem="D1q-cL-QeT" firstAttribute="centerX" secondItem="XFq-Zg-g8b" secondAttribute="centerX" id="bWh-b4-KpA"/>
+                            <constraint firstItem="vhN-47-WjZ" firstAttribute="leading" secondItem="p3e-6B-NQe" secondAttribute="trailing" constant="37" id="eHm-Nj-IJ7"/>
+                            <constraint firstItem="3cO-Iz-n8M" firstAttribute="leading" secondItem="udE-MT-lL9" secondAttribute="trailing" constant="45" id="iZh-aF-v8A"/>
+                            <constraint firstItem="0IH-Ld-H2W" firstAttribute="leading" secondItem="n4i-js-AlD" secondAttribute="trailing" constant="63" id="kug-iF-e5m"/>
+                            <constraint firstItem="D1q-cL-QeT" firstAttribute="leading" secondItem="8pP-Bg-rGr" secondAttribute="trailing" constant="51" id="u3W-m5-Aia"/>
+                            <constraint firstItem="0IH-Ld-H2W" firstAttribute="centerX" secondItem="XFq-Zg-g8b" secondAttribute="centerX" id="vxN-R4-IYj"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gmB-5i-YZY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="891" y="1143"/>
+            <point key="canvasLocation" x="903" y="1143"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ezp-3w-PEE">
@@ -345,10 +406,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zLp-pL-pYP">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zLp-pL-pYP">
                                 <rect key="frame" x="180" y="65" width="240" height="342"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Here's the weapons shop, where you can purchase new weapons to inflict greater damage on your opponents! " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="PWf-gl-2lh">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="Here's the weapons shop, where you can purchase new weapons to inflict greater damage on your opponents! " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="PWf-gl-2lh">
                                 <rect key="frame" x="77" y="441" width="446" height="93"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -356,6 +417,10 @@
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zLp-pL-pYP" firstAttribute="centerX" secondItem="1xD-9s-okv" secondAttribute="centerX" id="inJ-UH-tTz"/>
+                            <constraint firstItem="PWf-gl-2lh" firstAttribute="centerX" secondItem="1xD-9s-okv" secondAttribute="centerX" id="jU2-yc-AcT"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="joO-jk-Y3h" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -374,21 +439,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="That's the end of this tutorial! Have fun killing monsters and good luck." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mE2-tf-ZcQ">
-                                <rect key="frame" x="160" y="149" width="281" height="75"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kwy-1y-8ma">
-                                <rect key="frame" x="285" y="375" width="30" height="30"/>
-                                <state key="normal" title="Play"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kwy-1y-8ma">
+                                <rect key="frame" x="284" y="375" width="33" height="30"/>
+                                <state key="normal" title="Play!"/>
                                 <connections>
                                     <segue destination="nXl-Xy-N6A" kind="show" id="6pm-K8-TXX"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="That's the end of this tutorial! Have fun killing monsters and good luck." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mE2-tf-ZcQ">
+                                <rect key="frame" x="160" y="178" width="281" height="75"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kwy-1y-8ma" firstAttribute="centerX" secondItem="Teo-xV-Of6" secondAttribute="centerX" id="0gq-uC-l8n"/>
+                            <constraint firstItem="mE2-tf-ZcQ" firstAttribute="centerX" secondItem="Teo-xV-Of6" secondAttribute="centerX" id="BVH-JI-1i3"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7HK-2c-ywt" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -407,77 +476,102 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="weapon_stick.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="d0j-5L-kMN">
-                                <rect key="frame" x="267" y="144" width="100" height="100"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="weapon_stick.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="d0j-5L-kMN">
+                                <rect key="frame" x="264" y="188" width="100" height="100"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6so-8x-vcq">
-                                <rect key="frame" x="267" y="406" width="100" height="100"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="weapon_sword.png" translatesAutoresizingMaskIntoConstraints="NO" id="6so-8x-vcq">
+                                <rect key="frame" x="264" y="450" width="100" height="100"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="weapon_sword.png" translatesAutoresizingMaskIntoConstraints="NO" id="5HJ-Va-iK3">
-                                <rect key="frame" x="412" y="144" width="100" height="100"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="weapon_sword.png" translatesAutoresizingMaskIntoConstraints="NO" id="5HJ-Va-iK3">
+                                <rect key="frame" x="409" y="188" width="100" height="100"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="weapon_hand.png" translatesAutoresizingMaskIntoConstraints="NO" id="al9-cc-Dem">
-                                <rect key="frame" x="119" y="144" width="100" height="100"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="weapon_hand.png" translatesAutoresizingMaskIntoConstraints="NO" id="al9-cc-Dem">
+                                <rect key="frame" x="116" y="188" width="100" height="100"/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Fist (5)" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EsM-Ke-eQ8">
-                                <rect key="frame" x="122" y="252" width="97" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Fist (5)" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EsM-Ke-eQ8">
+                                <rect key="frame" x="119" y="296" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Stick (10)" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5KY-Ah-huB">
-                                <rect key="frame" x="270" y="252" width="97" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Stick (10)" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5KY-Ah-huB">
+                                <rect key="frame" x="267" y="296" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Knife (15)" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eR8-hl-jaw">
-                                <rect key="frame" x="414" y="252" width="97" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Knife (15)" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eR8-hl-jaw">
+                                <rect key="frame" x="411" y="296" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="cost: 10 coins" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hs4-PV-4lm">
-                                <rect key="frame" x="119" y="290" width="105" height="28"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="cost: 10 coins" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hs4-PV-4lm">
+                                <rect key="frame" x="116" y="334" width="105" height="28"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="cost: 20 coins" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jZ0-iP-wT2">
-                                <rect key="frame" x="261" y="290" width="105" height="28"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="cost: 20 coins" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jZ0-iP-wT2">
+                                <rect key="frame" x="258" y="334" width="105" height="28"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="cost: 30 coins" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bfw-XN-qB6">
-                                <rect key="frame" x="414" y="290" width="105" height="34"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="cost: 30 coins" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bfw-XN-qB6">
+                                <rect key="frame" x="411" y="334" width="105" height="34"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Selected:" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZOR-Rv-gsj">
-                                <rect key="frame" x="265" y="368" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4KL-ic-33d">
-                                <rect key="frame" x="277" y="526" width="73" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4KL-ic-33d">
+                                <rect key="frame" x="274" y="570" width="73" height="30"/>
                                 <state key="normal" title="Check Out"/>
+                                <connections>
+                                    <segue destination="lTN-Gj-CjQ" kind="showDetail" id="wRb-pI-Noe"/>
+                                </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Coins: $$" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GUG-L9-UGp">
-                                <rect key="frame" x="109" y="44" width="97" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Coins: 75" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GUG-L9-UGp">
+                                <rect key="frame" x="106" y="88" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Weapon Shop" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o1I-bM-5Hg">
-                                <rect key="frame" x="255" y="44" width="111" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Weapon Shop" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o1I-bM-5Hg">
+                                <rect key="frame" x="252" y="88" width="111" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Different weapons will inflict different amounts of damage on your opponent!" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wqA-sv-kdg">
+                                <rect key="frame" x="108" y="126" width="400" height="49.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Selected:" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZOR-Rv-gsj">
+                                <rect key="frame" x="262" y="412" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5KY-Ah-huB" firstAttribute="centerX" secondItem="GUL-f1-CJI" secondAttribute="centerX" id="6oD-i4-2in"/>
+                            <constraint firstItem="o1I-bM-5Hg" firstAttribute="centerX" secondItem="GUL-f1-CJI" secondAttribute="centerX" id="Evb-OF-oEV"/>
+                            <constraint firstItem="ZOR-Rv-gsj" firstAttribute="centerX" secondItem="GUL-f1-CJI" secondAttribute="centerX" id="Fzc-Gv-NDq"/>
+                            <constraint firstItem="o1I-bM-5Hg" firstAttribute="leading" secondItem="GUG-L9-UGp" secondAttribute="trailing" constant="49" id="IbO-IZ-dMM"/>
+                            <constraint firstItem="d0j-5L-kMN" firstAttribute="leading" secondItem="al9-cc-Dem" secondAttribute="trailing" constant="48" id="WBj-Ue-f8a"/>
+                            <constraint firstItem="d0j-5L-kMN" firstAttribute="centerX" secondItem="GUL-f1-CJI" secondAttribute="centerX" id="XsM-6h-Vwv"/>
+                            <constraint firstItem="jZ0-iP-wT2" firstAttribute="leading" secondItem="hs4-PV-4lm" secondAttribute="trailing" constant="37" id="ZXa-DA-bGn"/>
+                            <constraint firstItem="6so-8x-vcq" firstAttribute="centerX" secondItem="GUL-f1-CJI" secondAttribute="centerX" id="bY1-UC-mTY"/>
+                            <constraint firstItem="5HJ-Va-iK3" firstAttribute="leading" secondItem="d0j-5L-kMN" secondAttribute="trailing" constant="45" id="cbL-nb-Doe"/>
+                            <constraint firstItem="bfw-XN-qB6" firstAttribute="leading" secondItem="jZ0-iP-wT2" secondAttribute="trailing" constant="48" id="gLv-7u-eoI"/>
+                            <constraint firstItem="jZ0-iP-wT2" firstAttribute="centerX" secondItem="GUL-f1-CJI" secondAttribute="centerX" id="hDi-e7-3Wh"/>
+                            <constraint firstItem="eR8-hl-jaw" firstAttribute="leading" secondItem="5KY-Ah-huB" secondAttribute="trailing" constant="47" id="lyp-po-ItQ"/>
+                            <constraint firstItem="4KL-ic-33d" firstAttribute="centerX" secondItem="GUL-f1-CJI" secondAttribute="centerX" id="tcc-ro-Cyk"/>
+                            <constraint firstItem="5KY-Ah-huB" firstAttribute="leading" secondItem="EsM-Ke-eQ8" secondAttribute="trailing" constant="51" id="yeK-gM-4X3"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wpD-yJ-RjY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1565" y="1143"/>
+            <point key="canvasLocation" x="1652" y="1143"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="2NB-da-88t">
@@ -491,10 +585,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vf6-gU-d5X">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vf6-gU-d5X">
                                 <rect key="frame" x="180" y="61" width="240" height="342"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="h4q-sn-LIP">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="h4q-sn-LIP">
                                 <rect key="frame" x="77" y="437" width="446" height="93"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Here's the pet shop, where you can purchase a furry friend to help you in your adventures. Each pet will inflict an extra few points on our opponent when you attack them.</string>
@@ -503,6 +597,10 @@
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Vf6-gU-d5X" firstAttribute="centerX" secondItem="wuA-i1-2KU" secondAttribute="centerX" id="e1x-AC-Qnd"/>
+                            <constraint firstItem="h4q-sn-LIP" firstAttribute="centerX" secondItem="wuA-i1-2KU" secondAttribute="centerX" id="weX-Je-8KK"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="We2-U1-6ok" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -511,15 +609,17 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Monster1_2.png" width="100" height="100"/>
         <image name="pet_bird.png" width="100" height="100"/>
         <image name="pet_cat.png" width="100" height="100"/>
         <image name="pet_dog.png" width="100" height="100"/>
         <image name="user.png" width="100" height="100"/>
-        <image name="weapon_hand.png" width="216" height="202"/>
+        <image name="weapon_hand.png" width="100" height="100"/>
         <image name="weapon_stick.jpg" width="80" height="80"/>
-        <image name="weapon_sword.png" width="160" height="160"/>
+        <image name="weapon_sword.png" width="100" height="100"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="uNX-gK-uOz"/>
+        <segue reference="cEu-Pl-Wfu"/>
+        <segue reference="mpP-mY-gkh"/>
     </inferredMetricsTieBreakers>
 </document>
